@@ -1,5 +1,6 @@
 import StarfieldCanvas from "@/components/backg/Background";
 import "../styles/global.scss";
+import Nav from "@/components/navhead/Nav";
 
 export const metadata = {
   title: "Zahidi Portfolio",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <main>
+          <Nav />
           <div className="container">{children}</div>
         </main>
       </body>
